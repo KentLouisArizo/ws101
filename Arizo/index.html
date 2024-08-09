@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS 101</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Form Requirements</h1>
+
+    <form id="userForm">
+        <label for="fullname">Full Name:
+            <input type="text" id="fullname" name="fullname" required>
+        </label>
+        <label for="emailadd">Email Address:
+            <input type="email" id="emailadd" name="emailadd" required>
+        </label>
+        <label for="pass">Password:
+            <input type="password" id="pass" name="pass" required>
+        </label>
+        <div class="gender-group">
+            <span>Gender:</span><br>
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male" required> Male
+            </label>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female"> Female
+            </label>
+            <label for="other">
+                <input type="radio" id="other" name="gender" value="other"> Other
+            </label>
+        </div>
+        <label for="datebirth">Date of Birth:
+            <input type="date" id="datebirth" name="datebirth" required>
+        </label>
+        <label for="tele">Phone Number:
+            <input type="tel" id="tele" name="tele" required>
+        </label>
+        <label for="address">Address:
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </label>
+        <div class="checkbox-group">
+            <label for="sub">
+                <input type="checkbox" id="sub" name="sub"> Subscribe to Newsletter
+            </label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
